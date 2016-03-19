@@ -11,7 +11,19 @@ set termencoding=utf-8
 set nocompatible
 
 " enable the plugins
-filetype plugin on
+filetype off 
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " make backspace delete lots of things
 set backspace=indent,eol,start
