@@ -66,15 +66,9 @@ set list
 set statusline=%=%f\ \"%F\"\ %m%R\ [%4l(%3p%%):%3c-(0x%2B,\0%2b),%Y,%{&encoding}]
 set laststatus=2
 
-" make '~' behaves line an operator
-set tildeop "~"
-
 " -----------------------------------------------------------------------------
 " mappings
 " -----------------------------------------------------------------------------
-
-" autocomplete
-imap <C-Space> <C-N>
 
 " save the file
 imap <F2> <Esc>:w<CR>a
