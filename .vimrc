@@ -61,12 +61,12 @@ set tabstop=4 shiftwidth=4 smarttab expandtab
 au FileType make,fstab set noet ts=8 sw=8
 
 " load a colorscheme
-colorscheme jellybeans
+colorscheme pike
 
 " different background color past 80 columns
 set colorcolumn=80
 let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235
+highlight ColorColumn ctermbg=0
 " highlight cursor line
 set cursorline
 
