@@ -1,11 +1,11 @@
+" -----------------------------------------------------------------------------
+" settings
+" -----------------------------------------------------------------------------
+
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
-
-" -----------------------------------------------------------------------------
-" settings
-" -----------------------------------------------------------------------------
 
 " disable vi compatibility (emulation of old bugs) 
 set nocompatible
@@ -57,7 +57,7 @@ set undodir=~/.vim/undo//
 
 " tabulation
 set tabstop=4 shiftwidth=4 smarttab expandtab
-" (Makefile rule)
+" Makefile tabulation rules
 au FileType make,fstab set noet ts=8 sw=8
 
 " load a colorscheme
