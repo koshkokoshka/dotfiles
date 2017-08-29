@@ -78,6 +78,17 @@ set list
 set statusline=%=%f\ \"%F\"\ %m%R\ [%4l(%3p%%):%3c-(0x%2B,\0%2b),%Y,%{&encoding}]
 set laststatus=2
 
+if has("gui_running")
+    " set pretty default font (GUI)
+    set guifont=Consolas:h11
+    " remove the menu bar (GUI)
+    set guioptions-=m
+    " remove the tool bar (GUI)
+    set guioptions-=T
+    " remove theright-hand scroll bar (GUI)
+    set guioptions-=r
+endif
+
 " -----------------------------------------------------------------------------
 " mappings
 " -----------------------------------------------------------------------------
